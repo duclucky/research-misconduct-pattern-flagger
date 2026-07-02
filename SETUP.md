@@ -5,16 +5,18 @@
 - GenLayer dependencies (`py-genlayer`, `gltest`)
 
 ## Install
-- *Chưa xác minh* (Chờ chốt package manager: pip, poetry, hoặc uv).
+- Chạy `python -m venv venv` để tạo môi trường ảo.
+- Activate môi trường: `.\venv\Scripts\Activate.ps1` (Windows).
+- Cài đặt thư viện: `pip install -r requirements.txt`.
 
 ## Run dev
-- *Chưa xác minh*
+- Đảm bảo đã activate venv: `.\venv\Scripts\Activate.ps1`.
 
 ## Build
-- *Chưa xác minh* (GenLayer contracts có thể không cần build step riêng biệt, nhưng có thể cần check lint/schema).
+- Không cần build. Các file `.py` hợp đồng là độc lập.
 
 ## Test
-- Sử dụng `gltest` (Chi tiết cấu hình: *Chưa xác minh*).
+- Sử dụng `pytest` trong môi trường ảo.
 
 ## Check
 - Chạy `./scripts/check.ps1` (Windows) hoặc `./scripts/check.sh` (Linux/Mac).
